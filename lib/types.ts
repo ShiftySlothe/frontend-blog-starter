@@ -2,9 +2,11 @@ export type Post = {
   author: Author;
   coverImage: Image;
   date: string;
-  excerpt: string;
+  excerpt?: string;
   slug: string;
   title: string;
+  content?: string;
+  ogImage?: Image;
 };
 
 export type Author = {
