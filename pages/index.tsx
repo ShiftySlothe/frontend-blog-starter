@@ -6,6 +6,7 @@ import Header from '../components/Header';
 import PostGrid from '../components/PostGrid';
 import Head from 'next/head';
 import HomeGrid from '../components/HomeGrid';
+import NewHeader from '../components/NewHeader';
 
 interface HomeProps {
   allPosts: Post[];
@@ -18,7 +19,7 @@ const Home = ({ allPosts }: HomeProps) => {
       <Head>
         <title>Blog Template</title>
       </Head>
-      <Header />
+      <NewHeader />
       <HomeGrid allPosts={allPosts} />
     </Layout>
   );
